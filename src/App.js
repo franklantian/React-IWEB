@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-import Game from "./Game";
+import {Game} from "./Game";
 
 function App(props) {
   console.log(props)

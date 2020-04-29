@@ -3,10 +3,7 @@ import React from 'react';
 //import Content from "./Content";
 import "../src/App.css"
 
-export default class Game extends React.Component {
-    render() {
-        return (
-            <div className="Game">​{this.props.question.question}</div>
-        );
+export function Game(props){
+
+        return <div className="Game">​{props.question.question}</div>;
     }
-}
