@@ -16,6 +16,7 @@ function finished(state = false, action = {}) {
     }
 }
 
+//CurrentQuestion , state is the index of each question, Valor default is 0.
 function currentQuestion(state = 0, action = {}) {
     switch (action.type) {
         default:

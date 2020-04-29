@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
 import { connect } from 'react-redux';
+import Game from "./Game";
 
 function App(props) {
   console.log(props)
   return (
-    <div>
+    <div className="App">
+      <Game question={props.questions[props.currentQuestion]} />
     </div> );
 }
 

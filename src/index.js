@@ -4,7 +4,7 @@ import './index.css';
 import ReduxProvider from './redux/ReduxProvider';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<ReduxProvider />, document.getElementById('root'));
+ReactDOM.render(<ReduxProvider />, document.getElementById('root')); //ReactDOM with ID root. is in Index.html in Public
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
