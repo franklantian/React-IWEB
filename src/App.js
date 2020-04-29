@@ -7,7 +7,7 @@ function App(props) {
   console.log(props)
   return (
     <div className="App">
-      <Game question={props.questions[props.currentQuestion]} />
+      <Game pizzle={props.questions[props.currentQuestion]} />
     </div> );
 }
 

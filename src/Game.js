@@ -5,5 +5,5 @@ import "../src/App.css"
 
 export function Game(props){
 
-        return <div className="Game">​{props.question.question}</div>;
+        return <div className="Game">​{props.pizzle.question}</div>;
     }
