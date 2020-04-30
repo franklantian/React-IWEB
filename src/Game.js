@@ -1,9 +1,24 @@
 import React from 'react';
-//import ActionBar from "./ActionBar"; //crear un JS en src
+//import ActionBar from "./ActionBar";
 //import Content from "./Content";
-import "../src/App.css"
+//import "../src/App.css"
 
-export function Game(props){
+export default class Game extends React.Component {
+    render() {
+        return (
+            <div>
+                {this.props.pizzle.question}
+                // @userAnswer donde almacenaremos la respuesta del usuario
+                /*​ <input type="text" value={this.props.pizzle.userAnswer}/> */
+                // para llamar a this.props.onQuestionAnswer in App.js
+                <input type = "text"
+                       value={this.props.pizzle.userAnswer || ''}
+                       onChange={(e)=>this.props.onQuestionAnswer(e.target.value)} />
 
-        return <div className="Game">​{props.pizzle.question}</div>;
+
+
+
+            </div>
+        );
     }
+}
